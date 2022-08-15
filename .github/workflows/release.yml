@@ -5,6 +5,8 @@ on:
     branches: [ release ]
   pull_request:
     branches: [ release ]
+env:
+  BUILDER: 1
 jobs:
   release:
     name: release
