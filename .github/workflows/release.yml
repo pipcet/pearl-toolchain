@@ -33,6 +33,7 @@ jobs:
     - run: make -C pearl -j13 toolchain/gcc/gcc{checkout}
     - run: make -C pearl -j13 userspace/glibc/glibc{checkout}
     - run: make -C pearl -j13 build/toolchain.tar.zstd{release}
+    - run: make -C pearl -j13 build/libgcc.tar.zstd{release}
     - run: make -C pearl -j13 {release}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
